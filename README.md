@@ -1,162 +1,122 @@
-<p align=center><img height="72.125%" width="72.125%" src="https://raw.githubusercontent.com/KratosMultiphysics/Documentation/master/Wiki_files/Home/kratos.png"></p>
-
-[![License][license-image]][license] [![C++][c++-image]][c++standard] [![Github CI][Nightly-Build]][Nightly-link] [![DOI][DOI-image]][DOI] [![GitHub stars][stars-image]][stars] [![Twitter][twitter-image]][twitter] [![Youtube][youtube-image]][youtube]
-
-[![Release][release-image]][releases]
-<a href="https://github.com/KratosMultiphysics/Kratos/releases/latest"><img src="https://img.shields.io/github/release-date/KratosMultiphysics/Kratos?label="></a>
-<a href="https://github.com/KratosMultiphysics/Kratos/compare/Release-9.5...master"><img src="https://img.shields.io/github/commits-since/KratosMultiphysics/Kratos/latest?label=commits%20since"></a>
-<a href="https://github.com/KratosMultiphysics/Kratos/commit/master"><img src="https://img.shields.io/github/last-commit/KratosMultiphysics/Kratos?label=latest%20commit"></a>
-
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/KratosMultiphysics.svg)](https://pypi.org/project/KratosMultiphysics/)
-[![Downloads](https://pepy.tech/badge/KratosMultiphysics/month)](https://pepy.tech/project/KratosMultiphysics)
-
-[release-image]: https://img.shields.io/badge/release-9.5-green.svg?style=flat
-[releases]: https://github.com/KratosMultiphysics/Kratos/releases
-
-[license-image]: https://img.shields.io/badge/license-BSD-green.svg?style=flat
-[license]: https://github.com/KratosMultiphysics/Kratos/blob/master/kratos/license.txt
-
-[c++-image]: https://img.shields.io/badge/C++-17-blue.svg?style=flat&logo=c%2B%2B
-[c++standard]: https://isocpp.org/std/the-standard
-
-[Nightly-Build]: https://github.com/KratosMultiphysics/Kratos/workflows/Nightly%20Build/badge.svg
-[Nightly-link]: https://github.com/KratosMultiphysics/Kratos/actions?query=workflow%3A%22Nightly+Build%22
-
-[DOI-image]: https://zenodo.org/badge/DOI/10.5281/zenodo.3234644.svg
-[DOI]: https://doi.org/10.5281/zenodo.3234644
-
-[stars-image]: https://img.shields.io/github/stars/KratosMultiphysics/Kratos?label=Stars&logo=github
-[stars]: https://github.com/KratosMultiphysics/Kratos/stargazers
-
-[twitter-image]: https://img.shields.io/twitter/follow/kratosmultiphys.svg?label=Follow&style=social
-[twitter]: https://twitter.com/kratosmultiphys
-
-[youtube-image]: https://badges.aleen42.com/src/youtube.svg
-[youtube]:https://www.youtube.com/@kratosmultiphysics3578
-
-_KRATOS Multiphysics_ ("Kratos") is a framework for building parallel, multi-disciplinary simulation software, aiming at modularity, extensibility, and high performance. Kratos is written in C++, and counts with an extensive Python interface. More in [Overview](https://github.com/KratosMultiphysics/Kratos/wiki/Overview)
-
-**Kratos** is **free** under BSD-4 [license](https://github.com/KratosMultiphysics/Kratos/wiki/Licence) and can be used even in comercial softwares as it is. Many of its main applications are also free and BSD-4 licensed but each derived application can have its own propietary license.
-
-# Main Features
-**Kratos** is __multiplatform__ and available for __Windows, Linux__ (several distros) and __macOS__.
-
-**Kratos** is __OpenMP__ and __MPI__ parallel and scalable up to thousands of cores.
-
-**Kratos** provides a core which defines the common framework and several application which work like plug-ins that can be extended in diverse fields.
-
-## Its main applications are:
-- [DEM](applications/DEMApplication) for cohesive and non cohesive spheric and non spheric particles simulation
-- [Fluid Dynamics](applications/FluidDynamicsApplication/README.md) Provides 2D and 3D incompressible fluids formulation
-- [Fluid Structure Interaction](applications/FSIApplication/README.md) for solution of different FSI problems
-- [Structural Mechanics](applications/StructuralMechanicsApplication/README.md) Providing solution for solid, shell and beam structures with linear and nonlinear, static and dynamic behavior
-- [Contact Structural Mechanics](applications/ContactStructuralMechanicsApplication/README.md) For contact problems used along the [Structural Mechanics application](applications/StructuralMechanicsApplication/README.md)
-
-## Some main modules are:
-- [Linear Solvers](applications/LinearSolversApplication/README.md)
-- [Trilinos](applications/TrilinosApplication/README.md)
-- [Metis](applications/MetisApplication/README.md)
-- [Meshing](applications/MeshingApplication/README.md)
-
-# Documentation
-Here you can find the basic documentation of the project:
-
-## Getting Started
-* Getting Kratos (Last compiled Release)
-    * [Kratos from `pip`](https://pypi.org/project/KratosMultiphysics/): Just simply type on terminal `pip install KratosMultiphysics-all`
-    * [Kratos for GiD](https://github.com/KratosMultiphysics/Kratos/wiki/Getting-Kratos-binaries-(via-GiD))
-* Compiling Kratos
-    * [See INSTALL.md](https://github.com/KratosMultiphysics/Kratos/blob/master/INSTALL.md)
-
-## Tutorials
-* [Running an example from GiD](https://github.com/KratosMultiphysics/Kratos/wiki/Running-an-example-from-GiD)
-* [Kratos input files and I/O](https://github.com/KratosMultiphysics/Kratos/wiki/Kratos-input-files-and-IO)
-* [Data management](https://github.com/KratosMultiphysics/Kratos/wiki/Data-management)
-* [Solving strategies](https://github.com/KratosMultiphysics/Kratos/wiki/Solving-strategies)
-* [Manipulating solution values](https://github.com/KratosMultiphysics/Kratos/wiki/Manipulating-solution-values)
-* [Multiphysics](https://github.com/KratosMultiphysics/Kratos/wiki/Multiphysics-example)
-
-## More documentation
-[Wiki](https://github.com/KratosMultiphysics/Kratos/wiki)
-
-# Examples of use
-Kratos has been used for simulation of many different problems in a wide variety of disciplines ranging from wind over singular building to granular domain dynamics. Some examples and validation benchmarks simulated by Kratos can be found [here](https://kratosmultiphysics.github.io/Examples/)
-
-<span>
-<img align="center" src="https://github.com/KratosMultiphysics/Examples/raw/master/fluid_dynamics/use_cases/barcelona_wind/resources/BarcelonaVelocityVector.png" width="288">
-  Barcelona Wind Simulation
-</span>
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p align="center" dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://raw.githubusercontent.com/KratosMultiphysics/Documentation/master/Wiki_files/Home/kratos.png"><img height="72.125%" width="72.125%" src="https://raw.githubusercontent.com/KratosMultiphysics/Documentation/master/Wiki_files/Home/kratos.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/kratos/license.txt"><img src="https://camo.githubusercontent.com/f5436b1e338b1fecf13a46a5123bfc483722786259d3298078699625e73f6d85/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4253442d677265656e2e7376673f7374796c653d666c6174" alt="许可证" data-canonical-src="https://img.shields.io/badge/license-BSD-green.svg?style=flat" style="max-width: 100%;" _mstalt="93288" _msthash="254"></a> <a href="https://isocpp.org/std/the-standard" rel="nofollow"><img src="https://camo.githubusercontent.com/4df27124597158ed93ccb8f341d7c80a30d25c62ab42c0e71dc0b6c1d06a4166/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f432b2b2d31372d626c75652e7376673f7374796c653d666c6174266c6f676f3d63253242253242" alt="C++" data-canonical-src="https://img.shields.io/badge/C++-17-blue.svg?style=flat&amp;logo=c%2B%2B" style="max-width: 100%;" _mstalt="15600" _msthash="255"></a> <a href="https://github.com/KratosMultiphysics/Kratos/actions?query=workflow%3A%22Nightly+Build%22"><img src="https://github.com/KratosMultiphysics/Kratos/workflows/Nightly%20Build/badge.svg" alt="Github CI" style="max-width: 100%;" _mstalt="101101" _msthash="256"></a> <a href="https://doi.org/10.5281/zenodo.3234644" rel="nofollow"><img src="https://camo.githubusercontent.com/a6fcdd7ab18c707ee9d5a770b52a5552ab7aac95a5b19b9ff7669d651e8cfbe8/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f444f492f31302e353238312f7a656e6f646f2e333233343634342e737667" alt="数字对象标识符" data-canonical-src="https://zenodo.org/badge/DOI/10.5281/zenodo.3234644.svg" style="max-width: 100%;" _mstalt="22945" _msthash="257"></a> <a href="https://github.com/KratosMultiphysics/Kratos/stargazers"><img src="https://camo.githubusercontent.com/c36e75edde2424dc3892a54de88d3ee3250fa5a0938f674be93bdd42dd9ea237/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f4b7261746f734d756c7469706879736963732f4b7261746f733f6c6162656c3d5374617273266c6f676f3d676974687562" alt="GitHub 星标" data-canonical-src="https://img.shields.io/github/stars/KratosMultiphysics/Kratos?label=Stars&amp;logo=github" style="max-width: 100%;" _mstalt="180921" _msthash="258"></a> <a href="https://twitter.com/kratosmultiphys" rel="nofollow"><img src="https://camo.githubusercontent.com/ccbba4e8769b7a2253dd4ea9a03cd6e89560a4b3982bedb8fb188f59abbee160/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6b7261746f736d756c7469706879732e7376673f6c6162656c3d466f6c6c6f77267374796c653d736f6369616c" alt="唽" data-canonical-src="https://img.shields.io/twitter/follow/kratosmultiphys.svg?label=Follow&amp;style=social" style="max-width: 100%;" _mstalt="98995" _msthash="259"></a> <a href="https://www.youtube.com/@kratosmultiphysics3578" rel="nofollow"><img src="https://camo.githubusercontent.com/9c0743f0b8d19de24e97aea157e76b9b4d48a5e7cd96a2378fcd8c0dd9e0a820/68747470733a2f2f6261646765732e616c65656e34322e636f6d2f7372632f796f75747562652e737667" alt="优酷" data-canonical-src="https://badges.aleen42.com/src/youtube.svg" style="max-width: 100%;" _mstalt="97500" _msthash="260"></a></p>
+<p dir="auto"><a href="https://github.com/KratosMultiphysics/Kratos/releases"><img src="https://camo.githubusercontent.com/dc15560c89230ecd52d50318ad3438c8f17714ac33018cff742f4edc90d99fbd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656c656173652d392e352d677265656e2e7376673f7374796c653d666c6174" alt="释放" data-canonical-src="https://img.shields.io/badge/release-9.5-green.svg?style=flat" style="max-width: 100%;" _mstalt="92612" _msthash="261"></a>
+<a href="https://github.com/KratosMultiphysics/Kratos/releases/latest"><img src="https://camo.githubusercontent.com/b6c1769a3421ded7d75af725f638635e234124a69bf296f1ab1d7afa74ca972a/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f72656c656173652d646174652f4b7261746f734d756c7469706879736963732f4b7261746f733f6c6162656c3d" data-canonical-src="https://img.shields.io/github/release-date/KratosMultiphysics/Kratos?label=" style="max-width: 100%;"></a>
+<a href="https://github.com/KratosMultiphysics/Kratos/compare/Release-9.5...master"><img src="https://camo.githubusercontent.com/d2ad08c17e2036d56b8f6b1588e03a663cac693c927e53bca5f511e8ef9f029c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6d6d6974732d73696e63652f4b7261746f734d756c7469706879736963732f4b7261746f732f6c61746573743f6c6162656c3d636f6d6d69747325323073696e6365" data-canonical-src="https://img.shields.io/github/commits-since/KratosMultiphysics/Kratos/latest?label=commits%20since" style="max-width: 100%;"></a>
+<a href="https://github.com/KratosMultiphysics/Kratos/commit/master"><img src="https://camo.githubusercontent.com/bf3ccba0c5d83aecb4408872ee0a53e101ec2743fc98a6fbcbf13337893368bf/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f4b7261746f734d756c7469706879736963732f4b7261746f733f6c6162656c3d6c6174657374253230636f6d6d6974" data-canonical-src="https://img.shields.io/github/last-commit/KratosMultiphysics/Kratos?label=latest%20commit" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://pypi.org/project/KratosMultiphysics/" rel="nofollow"><img src="https://camo.githubusercontent.com/f35aad5050b9f7aad83ae96871ab130b9916503a6c52a2bce80a13cb65640dbc/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f4b7261746f734d756c7469706879736963732e737667" alt="PyPI pyversions" data-canonical-src="https://img.shields.io/pypi/pyversions/KratosMultiphysics.svg" style="max-width: 100%;" _mstalt="264329" _msthash="262"></a>
+<a href="https://pepy.tech/project/KratosMultiphysics" rel="nofollow"><img src="https://camo.githubusercontent.com/f6f7dce500e127328a341c1395246b4250271cd159ddad5419f68d6c94030abb/68747470733a2f2f706570792e746563682f62616467652f4b7261746f734d756c7469706879736963732f6d6f6e7468" alt="下载" data-canonical-src="https://pepy.tech/badge/KratosMultiphysics/month" style="max-width: 100%;" _mstalt="135733" _msthash="263"></a></p>
+<p dir="auto" _msttexthash="1407086486" _msthash="264"><em _istranslated="1">KRATOS Multiphysics</em> （“Kratos”） 是一个用于构建并行、多学科仿真软件的框架，旨在实现模块化、可扩展性和高性能。Kratos 是用 C++ 编写的，并且具有广泛的 Python 接口。更多 <a href="https://github.com/KratosMultiphysics/Kratos/wiki/Overview" _istranslated="1">概述</a></p>
+<p dir="auto" _msttexthash="1403120095" _msthash="265"><strong _istranslated="1">Kratos</strong> 在 BSD-4 <a href="https://github.com/KratosMultiphysics/Kratos/wiki/Licence" _istranslated="1">许可</a>下<strong _istranslated="1">是免费的</strong>，甚至可以在商业软件中按原样使用。它的许多主要应用程序也是免费的，并且获得 BSD-4 许可，但每个派生应用程序都可以拥有自己的专有许可证。</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="12663456" _msthash="266">主要特点</h1><a id="user-content-main-features" class="anchor" aria-label="永久链接：主要特点" href="#main-features" _mstaria-label="508014" _msthash="267"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="211579433" _msthash="268"><strong _istranslated="1">Kratos</strong> 是<strong _istranslated="1">多平台</strong>的，可用于 <strong _istranslated="1">Windows、Linux</strong>（多个发行版）和 <strong _istranslated="1">macOS</strong>。</p>
+<p dir="auto" _msttexthash="158997800" _msthash="269"><strong _istranslated="1">Kratos</strong> 是 <strong _istranslated="1">OpenMP</strong> 和 <strong _istranslated="1">MPI</strong> 并行的，可扩展至数千个内核。</p>
+<p dir="auto" _msttexthash="589187560" _msthash="270"><strong _istranslated="1">Kratos</strong> 提供了一个核心，它定义了通用框架和几个应用程序，它们就像插件一样工作，可以在不同领域进行扩展。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="30652973" _msthash="271">其主要应用是：</h2><a id="user-content-its-main-applications-are" class="anchor" aria-label="永久链接：它的主要应用是：" href="#its-main-applications-are" _mstaria-label="1010451" _msthash="272"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="109934240" _msthash="273">用于内聚和非内聚球形和非球形粒子模拟的 <a href="/KratosMultiphysics/Kratos/blob/master/applications/DEMApplication" _istranslated="1">DEM</a></li>
+<li _msttexthash="79843296" _msthash="274"><a href="/KratosMultiphysics/Kratos/blob/master/applications/FluidDynamicsApplication/README.md" _istranslated="1">流体力学</a>提供 2D 和 3D 不可压缩流体配方</li>
+<li _msttexthash="70429203" _msthash="275">用于求解不同 FSI 问题的<a href="/KratosMultiphysics/Kratos/blob/master/applications/FSIApplication/README.md" _istranslated="1">流固耦合</a></li>
+<li _msttexthash="290031339" _msthash="276"><a href="/KratosMultiphysics/Kratos/blob/master/applications/StructuralMechanicsApplication/README.md" _istranslated="1">结构力学</a>为具有线性和非线性、静态和动态行为的实体、壳和梁结构提供解决方案</li>
+<li _msttexthash="286230334" _msthash="277"><a href="/KratosMultiphysics/Kratos/blob/master/applications/ContactStructuralMechanicsApplication/README.md" _istranslated="1">联系 Structural Mechanics</a>对于在 <a href="/KratosMultiphysics/Kratos/blob/master/applications/StructuralMechanicsApplication/README.md" _istranslated="1">Structural Mechanics 应用程序</a>中使用的接触问题</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="34508903" _msthash="278">一些主要模块是：</h2><a id="user-content-some-main-modules-are" class="anchor" aria-label="永久链接：一些主要模块是：" href="#some-main-modules-are" _mstaria-label="804791" _msthash="279"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="/KratosMultiphysics/Kratos/blob/master/applications/LinearSolversApplication/README.md" _msttexthash="16507205" _msthash="280">线性求解器</a></li>
+<li><a href="/KratosMultiphysics/Kratos/blob/master/applications/TrilinosApplication/README.md" _msttexthash="11581947" _msthash="281">三利诺斯</a></li>
+<li><a href="/KratosMultiphysics/Kratos/blob/master/applications/MetisApplication/README.md" _msttexthash="8622744" _msthash="282">混血儿</a></li>
+<li><a href="/KratosMultiphysics/Kratos/blob/master/applications/MeshingApplication/README.md" _msttexthash="4227418" _msthash="283">啮合</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5144373" _msthash="284">文档</h1><a id="user-content-documentation" class="anchor" aria-label="永久链接： 文档" href="#documentation" _mstaria-label="559767" _msthash="285"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="103383033" _msthash="286">在这里您可以找到该项目的基本文档：</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4603768" _msthash="287">开始</h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接： 开始使用" href="#getting-started" _mstaria-label="591461" _msthash="288"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="87747595" _msthash="289">获取 Kratos（上次编译的版本）</font><ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="111536334" _msthash="290"><a href="https://pypi.org/project/KratosMultiphysics/" rel="nofollow" _mstmutation="1" _istranslated="1"><code _istranslated="1">来自 pip</code> 的 Kratos</a>：只需在终端上键入即可</font><code>pip install KratosMultiphysics-all</code></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Getting-Kratos-binaries-(via-GiD)" _msttexthash="14125228" _msthash="291">适用于 GiD 的 Kratos</a></li>
+</ul>
+</li>
+<li><font _mstmutation="1" _msttexthash="6778317" _msthash="292">编译 Kratos</font><ul dir="auto">
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/INSTALL.md" _msttexthash="5730075" _msthash="293">查看 INSTALL.md</a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5610267" _msthash="294">教程</h2><a id="user-content-tutorials" class="anchor" aria-label="永久链接： 教程" href="#tutorials" _mstaria-label="411385" _msthash="295"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Running-an-example-from-GiD" _msttexthash="21522995" _msthash="296">从 GiD 运行示例</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Kratos-input-files-and-IO" _msttexthash="24188164" _msthash="297">Kratos 输入文件和 I/O</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Data-management" _msttexthash="12574497" _msthash="298">数据管理</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Solving-strategies" _msttexthash="12988417" _msthash="299">解决策略</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Manipulating-solution-values" _msttexthash="12521886" _msthash="300">操纵解值</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/wiki/Multiphysics-example" _msttexthash="11499800" _msthash="301">多物理场</a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11285573" _msthash="302">更多文档</h2><a id="user-content-more-documentation" class="anchor" aria-label="永久链接： 更多文档" href="#more-documentation" _mstaria-label="737152" _msthash="303"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/KratosMultiphysics/Kratos/wiki" _msttexthash="5299788" _msthash="304">维基</a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11249277" _msthash="305">使用示例</h1><a id="user-content-examples-of-use" class="anchor" aria-label="永久链接：使用示例" href="#examples-of-use" _mstaria-label="561431" _msthash="306"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="725977993" _msthash="307">Kratos 已用于仿真各种学科中的许多不同问题，从单一建筑上的风到颗粒域动力学。<a href="https://kratosmultiphysics.github.io/Examples/" rel="nofollow" _istranslated="1">可以在此处</a>找到 Kratos 模拟的一些示例和验证基准</p>
+<span _msttexthash="27278810" _msthash="308"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Examples/raw/master/fluid_dynamics/use_cases/barcelona_wind/resources/BarcelonaVelocityVector.png" _istranslated="1"><img align="center" src="https://github.com/KratosMultiphysics/Examples/raw/master/fluid_dynamics/use_cases/barcelona_wind/resources/BarcelonaVelocityVector.png" width="288" style="max-width: 100%;" _istranslated="1"></a>巴塞罗那风模拟</span>
 <br>
-
-# Contributors
-Organizations contributing to Kratos:
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/CIMNE_logo.png" width="128">
-</br></br><p>International Center for Numerical Methods in Engineering</p>
-
-</br></br>
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUM_Logo.png" width="128">
-</br><p>Chair of Structural Analysis</br>Technical University of Munich </p>
-
-</br></br>
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/altair-sponsor-logo.png" width="128">
-</br><p>Altair Engineering</p>
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/Deltares_logo.png" width="128">
-</br><p>Deltares</p>
-
-</br></br>
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUBraunschweig_logo.svg" width="128">
-<p>Institute of Structural Analysis</br>Technische Universität Braunschweig</p>
-
-</br></br>
-
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/logo_UNIPD.svg" width="128">
-<p> University of Padova, Italy </p>
-
-</br></br>
-
-# Our Users
-Some users of the technologies developed in Kratos are:
-
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6354283" _msthash="309">贡献</h1><a id="user-content-contributors" class="anchor" aria-label="永久链接： 贡献者" href="#contributors" _mstaria-label="528866" _msthash="310"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="65158743" _msthash="311">为 Kratos 做出贡献的组织：</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/CIMNE_logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/CIMNE_logo.png" width="128" style="max-width: 100%;"></a></p>
+<br><br><p dir="auto" _msttexthash="38292124" _msthash="312">国际工程数值方法中心</p>
+<p dir="auto"><br><br></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUM_Logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUM_Logo.png" width="128" style="max-width: 100%;"></a></p>
+<br><p dir="auto" _msttexthash="63043708" _msthash="313">慕尼黑技术大学结构分析<br _istranslated="1">系主任</p>
+<p dir="auto"><br><br></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/altair-sponsor-logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/altair-sponsor-logo.png" width="128" style="max-width: 100%;"></a></p>
+<br><p dir="auto" _msttexthash="9824607" _msthash="314">Altair 工程</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/Deltares_logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/Deltares_logo.png" width="128" style="max-width: 100%;"></a></p>
+<br><p dir="auto" _msttexthash="114062" _msthash="315">Deltares</p>
+<p dir="auto"><br><br></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUBraunschweig_logo.svg"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/TUBraunschweig_logo.svg" width="128" style="max-width: 100%;"></a></p>
+<p dir="auto" _msttexthash="3283839" _msthash="316">Institute of Structural Analysis<br>Technische Universität Braunschweig</p>
+<p dir="auto"><br><br></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/logo_UNIPD.svg"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/logo_UNIPD.svg" width="128" style="max-width: 100%;"></a></p>
+<p dir="auto" _msttexthash="26272389" _msthash="317">意大利帕多瓦大学</p>
+<p dir="auto"><br><br></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="15429960" _msthash="318">我们的用户</h1><a id="user-content-our-users" class="anchor" aria-label="永久链接：我们的用户" href="#our-users" _mstaria-label="372047" _msthash="319"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="85932483" _msthash="320">Kratos 开发的技术的一些用户是：</p>
 <span>
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/AIRBUS_logo.png" width="128">
-<p>Airbus Defence and Space</br>Stress Methods & Optimisation Department</p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/AIRBUS_logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/AIRBUS_logo.png" width="128" style="max-width: 100%;"></a>
+<p dir="auto" _msttexthash="82915170" _msthash="321">空客防务和空间<br _istranslated="1">压力方法与优化部门</p>
 </span>
 <span>
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/siemens_logo.png" width="128">
-<p>Siemens AG</br>Corporate Technology</p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/siemens_logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/siemens_logo.png" width="128" style="max-width: 100%;"></a>
+<p dir="auto" _msttexthash="21171696" _msthash="322">Siemens AG<br _istranslated="1">企业技术</p>
 </span>
 <span>
-<img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/onera_logo.png" width="128">
-<p>ONERA, The French Aerospace Lab<br>Applied Aerodynamics Department</p>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/onera_logo.png"><img align="left" src="https://github.com/KratosMultiphysics/Documentation/raw/master/Wiki_files/Logos/onera_logo.png" width="128" style="max-width: 100%;"></a>
+<p dir="auto" _msttexthash="138942869" _msthash="323">ONERA，法国航空航天实验室<br _istranslated="1">应用空气动力学部</p>
 </span>
-
-🤗 Looking forward to seeing your logo here!
-
-# Special Thanks To
-## In Kratos Core:
-- [Boost](http://www.boost.org/) for ublas
-- [pybind11](https://github.com/pybind/pybind11) for exposing C++ to python
-- [GidPost](https://www.gidhome.com/gid-plus/tools/476/gidpost/) providing output to [GiD](https://www.gidhome.com/)
-- [AMGCL](https://github.com/ddemidov/amgcl) for its highly scalable multigrid solver
-- [JSON](https://github.com/nlohmann/json) JSON for Modern C++
-- [ZLib](https://zlib.net/) The compression library
-
-## In applications:
-- [Eigen](http://eigen.tuxfamily.org) For linear solvers used in the [LinearSolversApplication](applications/LinearSolversApplication)
-- [Trilinos](https://trilinos.org/) for MPI linear algebra and solvers used in [TrilinosApplication](applications/TrilinosApplication)
-- [METIS](http://glaros.dtc.umn.edu/gkhome/views/metis) for partitioning in [MetisApplication](applications/MetisApplication/README.md)
-- [CoSimIO](https://github.com/KratosMultiphysics/CoSimIO) for performing coupled simulations with external solvers within the [CoSimulationApplication](applications/CoSimulationApplication/README.md). The CoSimIO in Kratos uses the following libraries:
-  - [Boost](http://www.boost.org/) for the `intrusive_ptr`
-  - [filesystem](https://github.com/gulrak/filesystem) Header-only single-file std::filesystem compatible helper library, based on the C++17 specs
-  - [asio](https://think-async.com/Asio/) for socket based interprocess communication
-
-# How to cite Kratos?
-Please, use the following references when citing Kratos in your work.
-- [Dadvand, P., Rossi, R. & Oñate, E. An Object-oriented Environment for Developing Finite Element Codes for Multi-disciplinary Applications. Arch Computat Methods Eng 17, 253–297 (2010). https://doi.org/10.1007/s11831-010-9045-2](https://doi.org/10.1007/s11831-010-9045-2)
-- [Dadvand, P., Rossi, R., Gil, M., Martorell, X., Cotela, J., Juanpere, E., Idelsohn, S., Oñate, E. (2013). Migration of a generic multi-physics framework to HPC environments. Computers & Fluids. 80. 301–309. 10.1016/j.compfluid.2012.02.004.](10.1016/j.compfluid.2012.02.004)
-- [Vicente Mataix Ferrándiz, Philipp Bucher, Rubén Zorrilla, Suneth Warnakulasuriya, Riccardo Rossi, Alejandro Cornejo, jcotela, Carlos Roig, Josep Maria, tteschemacher, Miguel Masó, Guillermo Casas, Marc Núñez, Pooyan Dadvand, Salva Latorre, Ignasi de Pouplana, Joaquín Irazábal González, AFranci, Ferran Arrufat, riccardotosi, Aditya Ghantasala, Klaus Bernd Sautter, Peter Wilson, dbaumgaertner, Bodhinanda Chandra, Armin Geiser, Inigo Lopez, lluís, jgonzalezusua, Javi Gárate. (2024). KratosMultiphysics/Kratos: Release 9.5 (v9.5). Zenodo. https://doi.org/10.5281/zenodo.3234644](https://zenodo.org/records/6926179)
+<p dir="auto" _msttexthash="83200520" _msthash="324">🤗 期待在这里看到您的标志！</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="14254526" _msthash="325">特别鸣谢</h1><a id="user-content-special-thanks-to" class="anchor" aria-label="永久链接：特别鸣谢" href="#special-thanks-to" _mstaria-label="621842" _msthash="326"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="23010975" _msthash="327">在 Kratos Core 中：</h2><a id="user-content-in-kratos-core" class="anchor" aria-label="永久链接：在 Kratos Core 中：" href="#in-kratos-core" _mstaria-label="523406" _msthash="328"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="22597458" _msthash="329"><a href="http://www.boost.org/" rel="nofollow" _istranslated="1">乌布拉斯的提升</a></li>
+<li _msttexthash="43550468" _msthash="330"><a href="https://github.com/pybind/pybind11" _istranslated="1">pybind11</a> 用于将 C++ 暴露给 Python</li>
+<li _msttexthash="30358692" _msthash="331"><a href="https://www.gidhome.com/gid-plus/tools/476/gidpost/" rel="nofollow" _istranslated="1">GidPost</a> 向 <a href="https://www.gidhome.com/" rel="nofollow" _istranslated="1">GiD</a> 提供输出</li>
+<li _msttexthash="75124530" _msthash="332"><a href="https://github.com/ddemidov/amgcl" _istranslated="1">AMGCL</a> 为其高度可扩展的 multigrid 求解器</li>
+<li _msttexthash="42296670" _msthash="333"><a href="https://github.com/nlohmann/json" _istranslated="1">JSON</a> 格式适用于现代 C++ 的 JSON</li>
+<li _msttexthash="12269387" _msthash="334"><a href="https://zlib.net/" rel="nofollow" _istranslated="1">ZLib</a>压缩库</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="29739437" _msthash="335">在应用程序中：</h2><a id="user-content-in-applications" class="anchor" aria-label="永久链接：在应用程序中：" href="#in-applications" _mstaria-label="623090" _msthash="336"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="134755439" _msthash="337"><a href="http://eigen.tuxfamily.org" rel="nofollow" _istranslated="1">本征</a>对于 <a href="/KratosMultiphysics/Kratos/blob/master/applications/LinearSolversApplication" _istranslated="1">LinearSolversApplication</a> 中使用的线性求解器</li>
+<li _msttexthash="155818663" _msthash="338">用于 MPI 线性代数的 <a href="https://trilinos.org/" rel="nofollow" _istranslated="1">Trilinos</a> 和 <a href="/KratosMultiphysics/Kratos/blob/master/applications/TrilinosApplication" _istranslated="1">Trilinos</a> 中使用的求解器应用</li>
+<li _msttexthash="70000619" _msthash="339"><a href="http://glaros.dtc.umn.edu/gkhome/views/metis" rel="nofollow" _istranslated="1">METIS</a> 用于在 <a href="/KratosMultiphysics/Kratos/blob/master/applications/MetisApplication/README.md" _istranslated="1">MetisApplication</a> 中进行分区</li>
+<li><font _mstmutation="1" _msttexthash="466613979" _msthash="340"><a href="https://github.com/KratosMultiphysics/CoSimIO" _mstmutation="1" _istranslated="1">CoSimIO</a> 用于在 <a href="/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/README.md" _mstmutation="1" _istranslated="1">CoSimulationApplication</a> 中使用外部求解器执行耦合仿真。Kratos 中的 CoSimIO 使用以下库：</font><ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="4795115" _msthash="341"><a href="http://www.boost.org/" rel="nofollow" _mstmutation="1" _istranslated="1">Boost</a> 的</font><code>intrusive_ptr</code></li>
+<li _msttexthash="247804960" _msthash="342"><a href="https://github.com/gulrak/filesystem" _istranslated="1">文件系统</a>基于 C++17 规范的仅头文件单文件 std：：filesystem 兼容帮助程序库</li>
+<li _msttexthash="70616728" _msthash="343">用于基于套接字的进程间通信<a href="https://think-async.com/Asio/" rel="nofollow" _istranslated="1">的 ASIO</a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="25489477" _msthash="344">如何引用 Kratos？</h1><a id="user-content-how-to-cite-kratos" class="anchor" aria-label="永久链接： 如何引用 Kratos？" href="#how-to-cite-kratos" _mstaria-label="667420" _msthash="345"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="143042471" _msthash="346">在您的作品中引用 Kratos 时，请使用以下参考资料。</p>
+<ul dir="auto">
+<li><a href="https://doi.org/10.1007/s11831-010-9045-2" rel="nofollow" _msttexthash="820228851" _msthash="347">Dadvand， P.， Rossi， R. &amp; Oñate， E.一个面向对象的环境，用于为多学科应用程序开发有限元代码。Arch Computat Methods Eng 17， 253–297 （2010）。https://doi.org/10.1007/s11831-010-9045-2</a></li>
+<li><a href="/KratosMultiphysics/Kratos/blob/master/10.1016/j.compfluid.2012.02.004" _msttexthash="1606846540" _msthash="348">Dadvand， P.， Rossi， R.， Gil， M.， Martorell， X.， Cotela， J.， Juanpere， E.， Idelsohn， S.， Oñate， E. （2013）。将通用多物理场框架迁移到 HPC 环境。计算机和液体。80. 301–309.10.1016/j.compfluid.2012.02.004.</a></li>
+<li><a href="https://zenodo.org/records/6926179" rel="nofollow" _msttexthash="10596045382" _msthash="349">维森特·马泰克斯·费兰迪斯、菲利普·布赫、鲁本·佐里拉、苏内斯·瓦纳库拉苏里亚、里卡多·罗西、亚历杭德罗·科尔内霍、jcotela、卡洛斯·罗伊格、何塞普·玛丽亚、特图切尔、米格尔·马索、吉列尔莫·卡萨斯、马克·努涅斯、普扬·达德万德、萨尔瓦·拉托雷、伊格纳西·德·普普拉纳、华金·伊拉扎巴尔·冈萨雷斯、阿夫兰奇、费兰·阿鲁法特、里卡多托西、阿迪亚·甘塔萨拉、克劳斯·伯恩德·萨特、彼得·威尔逊、德鲍姆加特纳、菩提南达·钱德拉、阿明·盖泽、伊尼戈·洛佩兹、路易斯、jgonzalezusua、哈维·加拉特。（2024）. KratosMultiphysics/Kratos：版本 9.5 （v9.5）。芝诺多。https://doi.org/10.5281/zenodo.3234644</a></li>
+</ul>
+</article></div>
